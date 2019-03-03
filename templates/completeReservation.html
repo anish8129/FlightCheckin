@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reservation Details</title>
+</head>
+<body>
+
+<h1> Congratulation Reservation has been Completed Successfully</h1>
+	<h2>Flight Details</h2>
+	
+	Airlines:{{reservation.flight.operating_airlines}}<br/>
+	Flight Number: {{reservation.flight.flight_number}}<br/>
+	From: {{reservation.flight.departure_city}}<br/>
+	To: {{reservation.flight.arrival_city}}<br/>
+	Date Of Departure: {{reservation.flight.departure_date}}<br/>
+
+	<h2>Passenger Details</h2>
+	
+	First Name: {{reservation.passenger.f_name}}<br/>
+	Last Name: {{reservation.passenger.l_name}}<br/>
+	Email: {{reservation.passenger.email}}<br/>
+	Mobile Number: {{reservation.passenger.phone}}<br/>
+    
+    Reservation No:{{reservation.id}}
+    No of Bags:{{reservation.number_of_bags}}
+
+</body>
+</html>
